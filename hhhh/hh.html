@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="gg.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main_sec">
+            <div class="regs">Bus Reservation System</div>
+            <form>
+                <div class="form_sec">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <label for="numTickets">Number of Tickets:</label>
+                    <input type="number" id="numTickets" name="numTickets" min="1" required>
+
+                    <label for="pickup">Pickup:</label>
+                    <select id="pickup" name="pickup" required>
+                        <option value="">Select Pickup point</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                    </select>
+
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                    </select>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="main_sec">
+            <div class="regs">Registration</div>
+            <form action="">
+                <div class="form_sec">
+                    <div class="full_user">
+                        <span class="details">Full Name</span>
+                        <input type="text"  placeholder="Enter your name">
+                    </div>
+
+                    <div class="full_user">
+                        <span class="details">Username</span>
+                        <input type="text"  placeholder="Enter your Username">
+                    </div>
+
+                    <div class="full_user">
+                        <span class="details">Email</span>
+                        <input type="text"  placeholder="Enter your email">
+                    </div>
+
+                    <div class="full_user">
+                        <span class="details">Phone Number</span>
+                        <input type="number"  placeholder="Enter your Number">
+                    </div>
+
+                    <div class="full_user">
+                        <span class="details">Password</span>
+                        <input type="Password"  placeholder="Enter your Password">
+                    </div>
+
+                    <div class="full_user">
+                        <span class="details">Confirm Password</span>
+                        <input type="Password"  placeholder="Confirm your Password">
+                    </div>
+                </div>
+                <div class="gend">
+                    <p>Gender</p>
+                    <span class="male_female">Male</span>
+                    <input type="radio" name="gender">
+
+                    <span class="male_female">Female</span>
+                    <input type="radio" name="gender">
+                </div>
+                <div class="reg">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+
+        <div class="main_sec">
+            <div class="form_sec">
+                <div class="head_sec">Sign in</div>
+                <div class="em_pas">
+                    <input type="email" name="email" placeholder="User Email">
+                    <input type="password" name="pass" placeholder="Password">
+                </div>
+                <p>Forgot your password?</p>
+                <div class="registration">
+                    <input type="submit" value="New Registration">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Sign in">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
